@@ -187,6 +187,11 @@ body {
   padding: 140px 0 130px 0;
   overflow: hidden;
   position: relative;
+  margin-bottom: 120px;
+}
+
+.catalog {
+  margin-bottom: 44px;
 }
 
 .catalog-header {
@@ -307,4 +312,145 @@ body {
 .author-post {
   font-size: 15px;
   color: #6f6c90;
+}
+
+.testimonial {
+  background: var(--neutral-200);
+  height: 870px;
+  padding: 135px 99px 139px 99px;
+  text-align: center;
+  margin-bottom: 232px;
+}
+
+.testimonial-two-header .testimonial-paragraph {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-color-1);
+  padding-bottom: 11px;
+}
+
+.testimonial .testimonial-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.35294;
+  color: var(--neutral-800);
+  margin-bottom: 45px;
+}
+
+.testimonial-wrapper {
+  position: relative;
+  max-width: 1014px;
+  margin: 60px auto 0;
+}
+
+.main-card-testimonial {
+  display: flex;
+  background: #ffffff;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(13, 10, 44, 0.06);
+  max-height: 460px;
+}
+
+.card-media {
+  flex: 1;
+  position: relative;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.card-content .brand-logo {
+  margin-bottom: 18px;
+}
+
+.card-content .quote {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  color: var(--neutral-600);
+  margin-bottom: 34px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.prev {
+  left: -100px;
+}
+.next {
+  right: -100px;
+}
+.next.active {
+  background: #4f46e5;
+}
+
+.play-media-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-media-btn img {
+  left: 19px;
+  top: 16px;
+  position: absolute;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.author-info .name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  color: var(--neutral-800);
+  margin-bottom: 4px;
+}
+
+.author-info .role {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  color: var(--neutral-600);
 }
