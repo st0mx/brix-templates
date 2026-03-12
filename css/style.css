@@ -33,6 +33,18 @@
 html,
 body {
   font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .container {
@@ -406,9 +418,11 @@ body {
 .prev {
   left: -100px;
 }
+
 .next {
   right: -100px;
 }
+
 .next.active {
   background: #4f46e5;
 }
@@ -453,4 +467,88 @@ body {
   font-size: 18px;
   line-height: 1.66667;
   color: var(--neutral-600);
+}
+
+.testimonial-v3 {
+  background: var(--neutral-200);
+  height: 1065px;
+  padding: 140px 99px 139px 99px;
+}
+
+.testimonial-v3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.testimonial-v3-header .testimonial-paragraph {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-color-1);
+  padding-bottom: 14px;
+}
+
+.testimonial-v3-header h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.35294;
+  color: var(--neutral-800);
+  padding-bottom: 14px;
+}
+
+.testimonial-v3-header .subtitle__v3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  color: var(--neutral-700);
+  padding-bottom: 34px;
+}
+
+.testimonial-v3-card {
+  width: 592px;
+  height: 366px;
+  box-shadow: 0 5px 14px 0 rgba(8, 15, 52, 0.04);
+  background: #fff;
+  border: 1px solid #eff0f6;
+  border-radius: 20px;
+  padding: 75px 43px 67px 45px;
+}
+
+.testimonial-v3-card-right {
+  margin-bottom: 55px;
+}
+
+.testimonial-v3-card .brend-logo {
+  padding-bottom: 19px;
+}
+
+.testimonial-v3-card .brend-logo-right {
+  padding-bottom: 23px;
+}
+
+.testimonial-v3-card .subtitle {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  color: #514f6e;
+}
+
+.testimonial-v3-card .author-info .name {
+  padding-bottom: 6px;
+}
+
+.testimonial-v3-card .author-info .role {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11111;
+  color: var(--neutral-600);
+}
+
+.footer {
+  padding: 95px 0;
 }
