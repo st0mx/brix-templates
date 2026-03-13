@@ -70,51 +70,99 @@
             <h3 class="testimonial__title">Don't take our word for it</h3>
           </div>
 
-          <div class="reviews-grid">
-            <div class="reviews-card">
-              <h3 class="review-title">“The best Webflow Templates”</h3>
-              <p class="review-text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident
-              </p>
+          <div class="slider-wrapper">
+            <button class="slider-btn prev" id="prevBtn">
+              <img src="./assets/images/arrow-left.svg" alt="prev" />
+            </button>
+            <button class="slider-btn next" id="nextBtn">
+              <img src="./assets/images/arrow-right.svg" alt="next" />
+            </button>
 
-              <div class="review-author">
-                <img src="./assets/images/avatar/sophia.png" />
-                <div class="author-info">
-                  <p class="author-name">Sophia Moore</p>
-                  <p class="author-post">CEO at Webflow Agency</p>
-                </div>
-              </div>
-            </div>
+            <div class="reviews-viewport">
+              <div class="reviews-grid" id="sliderTrack">
+                <div class="reviews-card">
+                  <h3 class="review-title">“The best Webflow Templates”</h3>
+                  <p class="review-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat aute irure
+                    sint amet occaecat cupidatat non proident
+                  </p>
 
-            <div class="reviews-card">
-              <h3 class="review-title">“BRIX Templates is the #1”</h3>
-              <p class="review-text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident
-              </p>
-              <div class="review-author">
-                <img src="./assets/images/avatar/Adam - Circle Small.png" />
-                <div class="author-info">
-                  <p class="author-name">Adam Smith</p>
-                  <p class="author-post">Webflow Developer</p>
+                  <div class="review-author">
+                    <img src="./assets/images/avatar/sophia.png" />
+                    <div class="author-info">
+                      <p class="author-name">Sophia Moore</p>
+                      <p class="author-post">CEO at Webflow Agency</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="reviews-card">
-              <h3 class="review-title">“Webflow is the best nocode tool”</h3>
-              <p class="review-text">
-                Ut enim ad minim veniam, quis nostrudexercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident”
-              </p>
-              <div class="review-author">
-                <img src="./assets/images/avatar/Mike Warren.png" />
-                <div class="author-info">
-                  <p class="author-name">Mike Warren</p>
-                  <p class="author-post">Developer at BRIX Templates</p>
+
+                <div class="reviews-card">
+                  <h3 class="review-title">“BRIX Templates is the #1”</h3>
+                  <p class="review-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat aute irure
+                    sint amet occaecat cupidatat non proident
+                  </p>
+                  <div class="review-author">
+                    <img src="./assets/images/avatar/Adam - Circle Small.png" />
+                    <div class="author-info">
+                      <p class="author-name">Adam Smith</p>
+                      <p class="author-post">Webflow Developer</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews-card">
+                  <h3 class="review-title">
+                    “Webflow is the best nocode tool”
+                  </h3>
+                  <p class="review-text">
+                    Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat aute irure
+                    sint amet occaecat cupidatat non proident”
+                  </p>
+                  <div class="review-author">
+                    <img src="./assets/images/avatar/Mike Warren.png" />
+                    <div class="author-info">
+                      <p class="author-name">Mike Warren</p>
+                      <p class="author-post">Developer at BRIX Templates</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews-card">
+                  <h3 class="review-title">
+                    “Webflow is the best nocode tool”
+                  </h3>
+                  <p class="review-text">
+                    Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat aute irure
+                    sint amet occaecat cupidatat non proident”
+                  </p>
+                  <div class="review-author">
+                    <img src="./assets/images/avatar/john.svg" />
+                    <div class="author-info">
+                      <p class="author-name">John Carter</p>
+                      <p class="author-post">CEO at Webflow Agency</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews-card">
+                  <h3 class="review-title">“BRIX Templates is the #1”</h3>
+                  <p class="review-text">
+                    Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat aute irure
+                    sint amet occaecat cupidatat non proident”
+                  </p>
+                  <div class="review-author">
+                    <img src="./assets/images/avatar/katie.svg" />
+                    <div class="author-info">
+                      <p class="author-name">Kathie Corl</p>
+                      <p class="author-post">Webflow Developer</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -150,39 +198,78 @@
               /></a>
             </div>
 
-            <div class="main-card-testimonial">
-              <div class="card-media">
-                <img
-                  src="./assets/images/testimonial-card.png"
-                  class="preview-image"
-                />
-                <div class="play-media-btn">
-                  <img
-                    class="arrow_media"
-                    src="./assets/images/arrow_media.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
+            <div class="testimonial-viewport">
+              <div class="testimonial-track">
+                <div class="main-card-testimonial">
+                  <div class="card-media">
+                    <img
+                      src="./assets/images/testimonial-card.png"
+                      class="preview-image"
+                    />
+                    <div class="play-media-btn">
+                      <img
+                        class="arrow_media"
+                        src="./assets/images/arrow_media.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
 
-              <div class="card-content">
-                <div class="brand-logo">
-                  <img src="./assets/images/logo__two.svg" />
+                  <div class="card-content">
+                    <div class="brand-logo">
+                      <img src="./assets/images/logo__two.svg" />
+                    </div>
+                    <p class="quote">
+                      "Lorem ipsum dolor sit amet, consectetur <br />
+                      adipiscing elit, sed do eiusmod tempor <br />
+                      incididunt ut labore et dolore magna aliqua <br />
+                      ut enim ad minim veniam, quis nostrud"
+                    </p>
+                    <div class="author">
+                      <img src="./assets/images/avatar/sophia.png" alt="" />
+                      <div class="author-info">
+                        <p class="name">Sophie Moore</p>
+                        <p class="role">Webflow Developer</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p class="quote">
-                  "Lorem ipsum dolor sit amet, consectetur <br />
-                  adipiscing elit, sed do eiusmod tempor <br />
-                  incididunt ut labore et dolore magna aliqua <br />
-                  ut enim ad minim veniam, quis nostrud"
-                </p>
-                <div class="author">
-                  <img
-                    src="./assets/images/avatar/Adam - Circle Small.png"
-                    alt=""
-                  />
-                  <div class="author-info">
-                    <p class="name">Adam Smith</p>
-                    <p class="role">Webflow Developer</p>
+
+                <div class="main-card-testimonial">
+                  <div class="card-media">
+                    <img
+                      src="./assets/images/testimonial-card2.png"
+                      class="preview-image"
+                    />
+                    <div class="play-media-btn">
+                      <img
+                        class="arrow_media"
+                        src="./assets/images/arrow_media.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="brand-logo">
+                      <img src="./assets/images/logo-airtable.svg" />
+                    </div>
+                    <p class="quote">
+                      "Lorem ipsum dolor sit amet, consectetur <br />
+                      adipiscing elit, sed do eiusmod tempor <br />
+                      incididunt ut labore et dolore magna aliqua <br />
+                      ut enim ad minim veniam, quis nostrud"
+                    </p>
+                    <div class="author">
+                      <img
+                        src="./assets/images/avatar/Adam - Circle Small.png"
+                        alt=""
+                      />
+                      <div class="author-info">
+                        <p class="name">Adam Smith</p>
+                        <p class="role">Web Designer at Airtable</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
