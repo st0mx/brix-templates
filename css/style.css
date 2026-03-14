@@ -664,20 +664,6 @@ body {
   transform: scale(1.03);
 }
 
-@media (max-width: 768px) {
-  .reviews-grid {
-    grid-auto-columns: 85vw;
-    gap: 15px;
-  }
-  .slider-btn {
-    display: none;
-  }
-  .reviews-viewport {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-}
-
 @media (max-width: 480px) {
   .header-logo img {
     max-height: 25px;
@@ -709,6 +695,21 @@ body {
     font-size: 13px;
     flex-direction: row;
     text-align: center;
+  }
+  .reviews-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: row !important;
+    gap: 20px;
+    width: 100% !important;
+    transform: none !important;
+  }
+
+  .reviews-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 auto;
   }
   .review-testimonials p {
     font-size: 16px;
