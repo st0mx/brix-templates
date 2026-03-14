@@ -36,6 +36,8 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Animation */
+
 .reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -47,12 +49,47 @@ body {
   transform: translateY(0);
 }
 
+/* SLIDER */
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.prev {
+  left: -100px;
+}
+
+.next {
+  right: -100px;
+}
+
+.next.active {
+  background: #4f46e5;
+}
+
 .container {
   max-width: 1400px;
   padding: 0 20px;
   width: 100%;
   margin: 0 auto;
 }
+
+/* HEADER */
 
 .header {
   padding: 32px 0;
@@ -64,7 +101,7 @@ body {
   justify-content: space-between;
 }
 
-.header a {
+.header .btn-header {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11111;
@@ -73,7 +110,15 @@ body {
   padding: 20px 40px;
   border-radius: 56px;
   background: var(--primary-color-1);
+  transition: transform 0.3s ease-out;
 }
+
+.header .btn-header:hover {
+  background: #200ee4;
+  transform: scale(1.05);
+}
+
+/* HERO */
 
 .hero {
   text-align: center;
@@ -106,24 +151,6 @@ body {
   color: var(--neutral-600);
   padding-bottom: 40px;
 }
-
-/* .hero #hero__input {
-  border: 1px solid #eff0f6;
-  border-radius: 60px;
-  width: 599px;
-  height: 77px;
-  margin-bottom: 25px;
-  box-shadow: 0 8px 25px 0 rgba(13, 10, 44, 0.06);
-  background: #fff;
-
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.11111;
-  color: #6f6c90;
-
-  padding: 11px 16px 11px 30px;
-} */
 
 .form-hero {
   display: flex;
@@ -194,19 +221,13 @@ body {
   color: var(--primary-color-1);
 }
 
-.review {
-  background: var(--neutral-200);
-  padding: 140px 0 130px 0;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 120px;
-}
+/* COAT */
 
-.catalog {
+.coat {
   margin-bottom: 44px;
 }
 
-.catalog-header {
+.coat-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,14 +241,14 @@ body {
   margin-bottom: 44px;
 }
 
-.catalog-header h2 {
+.coat-header h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.45833;
   color: #170f49;
 }
 
-.catalog-header a {
+.coat-header a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.125;
@@ -237,9 +258,19 @@ body {
   border-radius: 50px;
 }
 
-.catalog-header a:hover {
+.coat-header a:hover {
   background: #d3d1f7;
   color: #483add;
+}
+
+/* SECTION REVIEW */
+
+.review {
+  background: var(--neutral-200);
+  padding: 140px 0 130px 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 120px;
 }
 
 .slider-viewport {
@@ -270,33 +301,6 @@ body {
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-50%) scale(0.8);
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-
-  width: 64px;
-  height: 64px;
-  background-color: #4f46e5;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
-  transition: all 0.3s ease;
-}
-
-.prev {
-  left: -32px;
-}
-
-.next {
-  right: -32px;
 }
 
 .reviews-grid {
@@ -388,6 +392,8 @@ body {
   color: #6f6c90;
 }
 
+/* SECTION TESTIMONIAL */
+
 .testimonial {
   background: var(--neutral-200);
   height: 870px;
@@ -474,34 +480,6 @@ body {
   margin-bottom: 34px;
 }
 
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 64px;
-  height: 64px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  transition: 0.3s;
-}
-
-.prev {
-  left: -100px;
-}
-
-.next {
-  right: -100px;
-}
-
-.next.active {
-  background: #4f46e5;
-}
-
 .play-media-btn {
   position: absolute;
   top: 50%;
@@ -543,6 +521,8 @@ body {
   line-height: 1.66667;
   color: var(--neutral-600);
 }
+
+/* SECTION TESTIMONIAL V3 */
 
 .testimonial-v3 {
   background: var(--neutral-200);
@@ -624,6 +604,8 @@ body {
   color: var(--neutral-600);
 }
 
+/* FOOTER */
+
 .footer {
   padding: 57px 0;
 }
@@ -674,4 +656,10 @@ body {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.subscribe-form-small button:hover {
+  background: #483add;
+  transform: scale(1.03);
 }
